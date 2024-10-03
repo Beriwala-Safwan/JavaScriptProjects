@@ -26,6 +26,6 @@ document.getElementById('generateBtn').addEventListener('click', function () {
     const otp = generateOtp(otpLength);
     document.getElementById('otpDisplay').innerText = otp;
   } else {
-    alert("Please enter a valid OTP length.");
+    alert("Please enter a valid OTP length  betwee 4-6.");
   }
 });
