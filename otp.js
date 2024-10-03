@@ -22,7 +22,7 @@ function generateOtp(length) {
 document.getElementById('generateBtn').addEventListener('click', function () {
   const otpLength = document.getElementById('otpLength').value;
   
-  if (otpLength && otpLength > 0) {
+  if (otpLength && otpLength >=4 && otpLength <=6) {
     const otp = generateOtp(otpLength);
     document.getElementById('otpDisplay').innerText = otp;
   } else {
